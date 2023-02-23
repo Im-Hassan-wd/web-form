@@ -60,7 +60,9 @@ form label {
 }
 
 form input {
+    width: 460px;
     max-width: 500px;
     padding: 8px;
     border: 1px solid var(--gary);
+    border-radius: 8px;
 }
