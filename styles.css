@@ -1,14 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
 
 /* global styles start */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 :root {
     --primary: #19467D;
+    --gary: #B0B4B0;
+}
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    line-height: 72px;
+    margin: 24px 0;
 }
 .container {
     max-width: 80%;
@@ -18,7 +25,6 @@
     align-items: flex-end;
     flex-direction: column;
     justify-content: center;
-
 }
 /* global styles end */
 
@@ -30,4 +36,31 @@ header {
 header a {
     text-decoration: none;
     color: #fff;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 50px;
+}
+
+.bg {
+    background: url(./img/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+form {
+    margin: 64px 0;
+}
+
+form label {
+    display: block;
+}
+
+form input {
+    max-width: 500px;
+    padding: 8px;
+    border: 1px solid var(--gary);
 }
