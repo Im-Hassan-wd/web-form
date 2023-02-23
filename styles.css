@@ -10,6 +10,7 @@
 :root {
     --primary: #19467D;
     --gary: #B0B4B0;
+    --error: crimson;
 }
 h1 {
     font-size: 48px;
@@ -57,6 +58,18 @@ form {
 
 form label {
     display: block;
+}
+
+form .form-group {
+    width: 460px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+form .form-group img {
+    position: absolute;
+    top: 50%;
+    right: 8px;
 }
 
 form input {
