@@ -77,7 +77,7 @@ function onSubmit(e) {
   email.value = "";
 }
 // remove popup
-popupContainer.addEventListener("transitionend", () => {
+popupContainer.addEventListener("click", () => {
     const popup = popupContainer.children[0];
     popupContainer.classList.remove("active") ;
     popup.classList.remove("active") ;
