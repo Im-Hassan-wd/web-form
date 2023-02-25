@@ -10,8 +10,8 @@
 :root {
     --primary: #19467D;
     --gary: #B0B4B0;
-    --error: crimson;
-    --success: 
+    --error: #A80606;
+    --success: #1A8A1A;
 }
 h1 {
     font-size: 48px;
