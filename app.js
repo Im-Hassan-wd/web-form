@@ -5,13 +5,26 @@ const lastName = document.querySelector("#last-name");
 const number = document.querySelector("#phone-number");
 const email = document.querySelector("#email-address");
 const password = document.querySelector("#password");
+const eye = document.querySelector('.eye');
+let clicked = true;
 // popup
 const popupContainer = document.querySelector("#popup-container");
 
 
-// event listerners
+// _______event listerners
 form.addEventListener("submit", onSubmit);
 
+// remove sign up popup
+popupContainer.addEventListener("click", () => {
+    const popup = popupContainer.children[0];
+    popupContainer.classList.remove("active") ;
+    popup.classList.remove("active") ;
+});
+
+// toggle password visibility
+eye.addEventListener("click", toggleVisibility)
+
+// _____________________functions ///
 function createMessage(message) {
     const small = document.createElement("small")
     small.textContent = "this field is required";
@@ -76,10 +89,16 @@ function onSubmit(e) {
   password.value = "";
   email.value = "";
 }
-// remove popup
-popupContainer.addEventListener("click", () => {
-    const popup = popupContainer.children[0];
-    popupContainer.classList.remove("active") ;
-    popup.classList.remove("active") ;
-});
+
+function toggleVisibility () {
+  clicked = !clicked;
+  if(clicked) {
+    eye.src = "./icon/eye.svg";
+    eye.previousElementSibling.setAttribute("type", "password");
+} else {
+    eye.src = "./icon/v-eye.svg"
+    eye.previousElementSibling.setAttribute("type", "text");
+  }
+}
+
 

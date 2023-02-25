@@ -102,6 +102,10 @@ form input {
     outline-color: var(--success);
 }
 
+form .eye {
+    cursor: pointer;
+}
+
 button {
     background: var(--primary);
     border: 1px solid var(--primary);
