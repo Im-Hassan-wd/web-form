@@ -45,6 +45,7 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 50px;
+    overflow: hidden;
 }
 
 .bg {
@@ -52,10 +53,11 @@ section {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    margin-top: -40px;
 }
 
 form {
-    margin-top: 32px;
+    margin: 32px 0 64px 0;
 }
 
 form label {
@@ -74,10 +76,29 @@ form .form-group img {
     right: 8px;
 }
 
-form input {
+form input[type="text"], 
+form input[type="email"], 
+form input[type="password"],
+form input[type="number"] {
     width: 460px;
-    max-width: 500px;
+    max-width: 460px;
     padding: 8px;
     border: 1px solid var(--gary);
     border-radius: 8px;
+    outline-color: var(--success);
+}
+
+form input[type="submit"] {
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    color: #fff;
+    height: 39px;
+    width: 125px;
+    display: block;
+    margin: 32px auto 0 auto;
+}
+
+ /* javascript styles */
+.error {
+    outline-color: var(--error);
 }

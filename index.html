@@ -7,45 +7,52 @@
     <title>Login</title>
 </head>
 <body>
-    <header> <!-- header -->
-      <div class="container">
-        <a href="#" class="login">Login</a>
-      </div>
-    </header><!-- header end -->
+  <header> <!-- header -->
+    <div class="container">
+      <a href="#" class="login">Login</a>
+    </div>
+  </header><!-- header end -->
 
-    <section><!-- section -->
-        <div class="bg"></div>
-        <form>
-          <h1>Create Account</h1>
-          
-          <div class="form-group">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" placeholder="Enter First Name">
-            <img src="./img/person.svg" alt="user">
-          </div>
+  <section><!-- section -->
+      <div class="bg"></div>
+      <form>
+        <h1>Create Account</h1>
+        
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" placeholder="Enter First Name">
+          <div class="message">this field is required</div>
+          <img src="./img/person.svg" alt="user">
+        </div>
 
-          <div class="form-group">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" placeholder="Enter Last Name">
-            <img src="./img/person.svg" alt="user">
-          </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" placeholder="Enter Last Name">
+          <img src="./img/person.svg" alt="user">
+        </div>
 
-          <div class="form-group">
-            <label for="phone-number">Phone Number</label>
-            <input type="number" id="phone-number" placeholder="Enter Phone">
-            <img src="./img/phone.svg" alt="phone">
-          </div>
-          <div class="form-group">
-            <label for="email-address">Email Address</label>
-            <input type="email" id="email-address" placeholder="Enter Email Address">
-            <img src="./img/email.svg" alt="email">
-          </div>
-          <div class="form-group">
-            <label for="password">Enter Password</label>
-            <input type="password" id="password" placeholder="Enter Password">
-            <img src="./img/eye.svg" alt="password">
-          </div>
-        </form>
-    </section><!-- section --> 
+        <div class="form-group">
+          <label for="phone-number">Phone Number</label>
+          <input type="number" id="phone-number" placeholder="Enter Phone">
+          <img src="./img/phone.svg" alt="phone">
+        </div>
+        <div class="form-group">
+          <label for="email-address">Email Address</label>
+          <input type="email" id="email-address" placeholder="Enter Email Address">
+          <img src="./img/email.svg" alt="email">
+        </div>
+        <div class="form-group">
+          <label for="password">Enter Password</label>
+          <input type="password" id="password" placeholder="Enter Password">
+          <img src="./img/eye.svg" alt="password">
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Sign Up">
+        </div>
+      </form>
+  </section><!-- section --> 
+
+  <script src="app.js"></script>
 </body>
 </html>
