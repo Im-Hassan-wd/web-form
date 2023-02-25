@@ -1,10 +1,15 @@
+// form && input fields
 const form = document.querySelector("form");
 const firstName = document.querySelector("#first-name");
 const lastName = document.querySelector("#last-name");
 const number = document.querySelector("#phone-number");
 const email = document.querySelector("#email-address");
 const password = document.querySelector("#password");
+// popup
+const popupContainer = document.querySelector("#popup-container");
 
+
+// event listerners
 form.addEventListener("submit", onSubmit);
 
 function createMessage(message) {
@@ -61,6 +66,20 @@ function onSubmit(e) {
     password.classList.remove("error");
   }
 
-  
+  // SHOW POPUP
+  popupContainer.classList.add('active')
+
+  // reset fields
+  lastName.value = "";
+  firstName.value = "";
+  number.value = "";
+  password.value = "";
+  email.value = "";
 }
+// remove popup
+popupContainer.addEventListener("transitionend", () => {
+    const popup = popupContainer.children[0];
+    popupContainer.classList.remove("active") ;
+    popup.classList.remove("active") ;
+});
 
