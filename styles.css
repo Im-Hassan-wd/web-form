@@ -58,6 +58,7 @@ section {
 
 form {
     margin: 32px 0 64px 0;
+    padding: 0 16px;
 }
 
 form label {
@@ -76,10 +77,16 @@ form .form-group img {
     right: 8px;
 }
 
-form input[type="text"], 
-form input[type="email"], 
-form input[type="password"],
-form input[type="number"] {
+form .form-group small {
+    margin-top: 4px;
+    display: block;
+    text-align: end;
+    margin: 0;
+    padding: 0;
+    color: var(--error);
+}
+
+form input {
     width: 460px;
     max-width: 460px;
     padding: 8px;
@@ -88,7 +95,7 @@ form input[type="number"] {
     outline-color: var(--success);
 }
 
-form input[type="submit"] {
+button {
     background: var(--primary);
     border: 1px solid var(--primary);
     color: #fff;
@@ -99,6 +106,7 @@ form input[type="submit"] {
 }
 
  /* javascript styles */
-.error {
+form input.error {
     outline-color: var(--error);
+    border: 2px solid var(--error);
 }
