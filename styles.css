@@ -48,6 +48,10 @@ section {
     overflow: hidden;
 }
 
+.form img {
+    width: 100%;
+}
+
 .bg {
     background: url(./img/1.jpg);
     background-size: cover;
@@ -103,10 +107,21 @@ button {
     width: 125px;
     display: block;
     margin: 32px auto 0 auto;
+    cursor: pointer;
 }
 
  /* javascript styles */
 form input.error {
     outline-color: var(--error);
     border: 2px solid var(--error);
+}
+
+@media (max-width: 944px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+  .bg {
+    width: 500px;
+    height: 100%;
+  }
 }

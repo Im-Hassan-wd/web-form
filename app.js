@@ -60,5 +60,7 @@ function onSubmit(e) {
   } else {
     password.classList.remove("error");
   }
+
+  
 }
 
