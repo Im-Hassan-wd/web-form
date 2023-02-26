@@ -34,6 +34,7 @@ function createMessage(message) {
     }, 2000)
 }
 
+// submit form
 function onSubmit(e) {
   e.preventDefault();
 
