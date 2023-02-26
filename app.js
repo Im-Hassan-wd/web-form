@@ -10,7 +10,6 @@ let clicked = true;
 // popup
 const popupContainer = document.querySelector("#popup-container");
 
-
 // _______event listerners
 form.addEventListener("submit", onSubmit);
 
@@ -100,5 +99,3 @@ function toggleVisibility () {
     eye.previousElementSibling.setAttribute("type", "text");
   }
 }
-
-
